@@ -1,3 +1,6 @@
+@import './styles/header.css';
+@import './styles/game-records.css';
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -12,6 +15,14 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --gap: 24px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
@@ -25,15 +36,9 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  padding: calc(var(--gap)/1.5);
   min-width: 320px;
   min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
 }
 
 button {
@@ -55,6 +60,15 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.bottom-Header {
+  margin-top: calc(var(--gap)/2);
+  padding: var(--gap);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap);
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -65,5 +79,16 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+/*
+** responsiveness
+*/
+
+@media screen and (max-width: 550px) {
+  .bottom-Header {
+    padding: 0;
+    flex-wrap: wrap;
   }
 }

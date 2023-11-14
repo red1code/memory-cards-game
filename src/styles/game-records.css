@@ -1,0 +1,35 @@
+.scores-container {
+  width: fit-content;
+  margin-inline: auto;
+  padding: calc(var(--gap)/2);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  flex: 1;
+}
+
+.score {
+  font-weight: bold;
+  text-wrap: nowrap;
+}
+
+.current-score {
+  margin-bottom: calc(var(--gap)/2);
+}
+
+.score span {
+  padding: calc(var(--gap)/4) calc(var(--gap)/3);
+  background-color: wheat;
+  margin: calc(var(--gap)/3);
+  border: none;
+  border-radius: 4px;
+}
+
+/*
+** responsiveness
+*/
+
+@media screen and (max-width: 550px) {
+  .scores-container {
+    flex: 0;
+  }
+}
