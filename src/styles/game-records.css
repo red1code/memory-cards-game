@@ -2,7 +2,8 @@
   width: fit-content;
   margin-inline: auto;
   padding: calc(var(--gap)/2);
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
   border-radius: 4px;
   flex: 1;
 }

@@ -61,7 +61,6 @@ button:focus-visible {
 }
 
 .bottom-Header {
-  margin-top: calc(var(--gap)/2);
   padding: var(--gap);
   display: flex;
   justify-content: center;
@@ -88,6 +87,7 @@ button:focus-visible {
 
 @media screen and (max-width: 550px) {
   .bottom-Header {
+    margin-top: calc(var(--gap)/2);
     padding: 0;
     flex-wrap: wrap;
   }

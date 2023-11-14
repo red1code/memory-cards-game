@@ -11,7 +11,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <div className='game-explanation'>
         <p>Get points by clicking on images, but if you click more than once you will lose, so you have to remember the images you have already clicked.</p>
       </div>
-      <GameRecords currentScore={3} bestScore={7} />
+      <GameRecords currentScore={0} bestScore={0} />
     </div>
   </React.StrictMode>
 )
