@@ -2,6 +2,7 @@ import Header from './components/header'
 import Game from './components/game'
 import { useState } from 'react'
 import { GAME_STATUS } from './utils/game-status';
+import Footer from './components/footer';
 
 export default function App() {
   const [score, setScore] = useState({ current: 0, best: 0 });
@@ -31,6 +32,7 @@ export default function App() {
         bestScore={score.best}
       />
       <Game handleScore={handleScoreChange} />
+      <Footer />
     </>
   )
 }
